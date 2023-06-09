@@ -1,14 +1,18 @@
 ## Directories and documents
 
 * `run_poscar`
+
 bash script for submitting `build_poscars.py` using slurm. 
+
 * `build_poscars.py`
 * `run`
 * `run_vis`
 * `visualise.py`
 * data
     + `POSCAR`
+	
 	poscar file
+	
 	+ `param.txt`
 	+ `INCAR`
 	+ `KPOINTS`
