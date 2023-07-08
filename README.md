@@ -1,5 +1,7 @@
 # Reaction-coordinate driven Kohn-Sham orbital characterisation for CO adsorption trajectories 
 
+[![DOI](https://zenodo.org/badge/621267410.svg)](https://zenodo.org/badge/latestdoi/621267410)
+
 In this directroy the files needed to reproduce this project's results should all be present. 
 During the project there was a specific workflow used. 
 One should always carafully review their inputs before blindly reproducing, nevertheless with the additional READMA files reproduction should not be to difficuly.
