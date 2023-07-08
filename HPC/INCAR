@@ -1,0 +1,28 @@
+System = CO on Rh
+
+LREAL= .FALSE.
+LCHARG=  .TRUE.
+LWAVE = .TRUE.
+
+PREC = normal
+ENCUT = 400
+
+ISMEAR = 2
+SIGMA = 0.2
+
+EDIFF = 1E-5
+EDIFFG = 1E-4
+NSW = 80
+
+ISIF = 2
+IBRION = 2
+ISPIN = 1
+POTIM = 0.2
+
+IALGO = 38
+NELMIN = 6
+NELM = 40
+
+NBANDS = 260
+
+NPAR = 4
