@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+#SBATCH --job-name=CO_Rh
+#SBATCH --output=output/%a/out
+#SBATCH --array=001-300%22
+#
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=16
+#SBATCH --time=24:00:00
+#SBATCH -p chem.default.q
+
+cp data/INCAR output/$SLURM_ARRAY_TASK_ID
+cp data/POTCAR output/$SLURM_ARRAY_TASK_ID
+cp data/KPOINTS output/$SLURM_ARRAY_TASK_ID
+cp data/lobsterin output/$SLURM_ARRAY_TASK_ID
+
+module load NewBuild/AMD VASP/5.4.1-intel-2022a
+
+cd output/$SLURM_ARRAY_TASK_ID
+
+mpirun -np ${SLURM_NTASKS} vasp_std
+
+~/lobster-4.1.0
+
+
