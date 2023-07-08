@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#SBATCH --job-name=video
+#SBATCH --output=video.out
+#
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=4
+#SBATCH --time=8:00:00
+
+python3 make_video.py
