@@ -1,0 +1,6 @@
+cohpstartenergy -30
+cohpendenergy 15
+
+userecommendedbasisfunctions
+
+cohpBetween atom 29 atom 30 orbitalWise
